@@ -1,0 +1,24 @@
+.heading {
+    color: var(--green);
+    font-family: var(--font-mono);
+    font-size: clamp(100px, 25vw, 200px);
+    line-height: 1;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 400;
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: var(--lightest-slate);
+    line-height: 1.1;
+}
+
+.errorWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,10 @@
+.chatWrapper {
+    // margin: 20px auto 10px;
+    height: calc(100vh - 190px);
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar { 
+    display: none;
+    }
+}

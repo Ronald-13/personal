@@ -1,0 +1,46 @@
+
+.inputWrapperSm {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(31, 168, 89, 0.4);
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+
+    textarea {
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 18px;
+      width: calc(100% - 120px);
+      margin: 20px;
+      resize: none;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar { 
+        display: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .button {
+      color: var(--green);
+      background: transparent;
+      border: 1px solid var(--green);
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      outline: none;
+      padding: 0.75rem 1rem;
+      font-family: var(--font-mono);
+      line-height: 1;
+      transition: var(--transition);
+      margin-left: 15px;
+      font-size: var(--fz-xs);
+      position: absolute;
+      right: 15px;
+      top: 25px;
+    }
+}

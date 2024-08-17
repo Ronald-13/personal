@@ -1,0 +1,29 @@
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+  .input {
+    height: 50px;
+    width: 50%;
+    border: 2px solid var(--green);
+    background: transparent;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    caret-color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+    color: var(--lightest-slate);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--slate);
+    }
+  }
+}

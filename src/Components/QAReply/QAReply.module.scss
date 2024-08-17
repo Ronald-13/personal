@@ -1,0 +1,45 @@
+.replyWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  flex-direction: column;
+
+  .reply {
+    width: 50%;
+    color: var(--slate);
+    font-size: var(--fz-heading);
+  }
+
+  .typing {
+    width: 50%;
+    margin-left: 20px;
+  }
+}
+
+.defaultOptionsWrapper {
+  display: flex;
+  margin-top: 40px;
+  animation-name: opacityHiddenToShow;
+  animation-duration: 2s;
+}
+
+.button {
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  outline: none;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  line-height: 1;
+  transition: var(--transition);
+  margin-left: 15px;
+  font-size: var(--fz-xs);
+}
+
+@keyframes opacityHiddenToShow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
